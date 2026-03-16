@@ -7,6 +7,7 @@ import Assessment from './pages/Assessment';
 import Reflection from './pages/Reflection';
 import Coach from './pages/Coach';
 import Toolkit from './pages/Toolkit';
+import Diagnostic from './pages/Diagnostic';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/framework" element={<Framework />} />
             <Route path="/assessment" element={<Assessment />} />
+            <Route path="/diagnostic" element={<Diagnostic />} />
             <Route path="/reflection" element={<Reflection />} />
             <Route path="/coach" element={<Coach />} />
             <Route path="/toolkit" element={<Toolkit />} />

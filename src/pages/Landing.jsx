@@ -99,16 +99,16 @@ const Landing = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
+                title: 'SCARE to CARES Diagnostic',
+                description: 'Identify your transformation friction and discover your focus area',
+                link: '/diagnostic',
+                linkText: 'Start Diagnostic'
+              },
+              {
                 title: 'CARES Framework',
                 description: 'Explore each pillar with examples and actionable steps',
                 link: '/framework',
                 linkText: 'View Framework'
-              },
-              {
-                title: 'Reflection Tool',
-                description: 'Analyze your challenges and receive personalized guidance',
-                link: '/reflection',
-                linkText: 'Start Reflection'
               },
               {
                 title: 'Ask the Coach',
