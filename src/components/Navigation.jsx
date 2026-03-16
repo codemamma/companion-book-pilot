@@ -21,8 +21,8 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex flex-col justify-center">
-            <span className="text-lg font-bold text-white">CARES Leadership Companion</span>
-            <span className="text-xs text-gray-400">Based on the book by {authorConfig.author.name}</span>
+            <span className="text-lg font-bold text-white">SCARE to CARES Companion</span>
+            <span className="text-xs text-gray-400">{authorConfig.companion.tagline}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,10 +41,18 @@ const Navigation = () => {
               </Link>
             ))}
             <a
+              href={authorConfig.author.bookPageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-sm text-gray-400 hover:text-white transition-colors"
+            >
+              View the Book Page
+            </a>
+            <a
               href={authorConfig.author.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 px-5 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="ml-2 px-5 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
             >
               Visit Saby's Website
             </a>
@@ -90,6 +98,14 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            <a
+              href={authorConfig.author.bookPageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2 text-gray-400 hover:bg-gray-800 rounded-lg text-sm font-medium text-center"
+            >
+              View the Book Page
+            </a>
             <a
               href={authorConfig.author.websiteUrl}
               target="_blank"

@@ -2,14 +2,14 @@ import { authorConfig } from '../data/authorConfig';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4">
+    <footer className="bg-gray-900 text-white py-12 px-4 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold mb-2">CARES Leadership Companion</h3>
+            <h3 className="text-lg font-bold mb-2">SCARE to CARES Companion</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Official companion experience for {authorConfig.book.title}
+              Official interactive companion to {authorConfig.book.title}
             </p>
             <p className="text-gray-400 text-sm">
               By {authorConfig.author.name}
