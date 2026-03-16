@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { caresData } from '../data/caresFramework';
+import { authorConfig } from '../data/authorConfig';
 
 const Framework = () => {
   const [expandedPillar, setExpandedPillar] = useState(null);
@@ -16,6 +17,9 @@ const Framework = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             The CARES Framework
           </h1>
+          <p className="text-sm text-gray-600 mb-4">
+            From {authorConfig.book.title} by {authorConfig.author.name}
+          </p>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Five interconnected pillars that drive successful leadership and transformation.
             Click on each pillar to explore practical guidance and actionable steps.

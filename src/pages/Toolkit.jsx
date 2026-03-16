@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { authorConfig } from '../data/authorConfig';
 
 const Toolkit = () => {
   const [formData, setFormData] = useState({
@@ -45,8 +46,11 @@ const Toolkit = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Toolkit & Next Steps
+            Toolkit & Resources
           </h1>
+          <p className="text-sm text-gray-600 mb-4">
+            Practical tools inspired by {authorConfig.book.title}
+          </p>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Take your CARES leadership practice further with resources, workshops, and implementation support.
           </p>
