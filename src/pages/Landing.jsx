@@ -7,13 +7,6 @@ const Landing = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-900 to-gray-950 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-600/10 border border-blue-600/30 rounded-full mb-8">
-            <svg className="w-4 h-4 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium text-blue-400">{authorConfig.companion.badge}</span>
-          </div>
-
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {authorConfig.book.title}
           </h1>
@@ -36,6 +29,63 @@ const Landing = () => {
             >
               Back to Website
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* SCARE vs CARES Comparison */}
+      <section className="py-20 px-4 bg-gray-950">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* SCARE Column */}
+            <div>
+              <h2 className="text-5xl md:text-6xl font-bold text-gray-700 mb-12 tracking-wider">SCARE</h2>
+              <div className="space-y-8">
+                {[
+                  { letter: 'S', term: 'Stress', description: 'Overwhelmed by constant pressure and change' },
+                  { letter: 'C', term: 'Confusion', description: 'Unclear priorities and mixed messages' },
+                  { letter: 'A', term: 'Anxiety', description: 'Fear of failure and unknown outcomes' },
+                  { letter: 'R', term: 'Resistance', description: 'Pushback and lack of buy-in' },
+                  { letter: 'E', term: 'Ego', description: 'Defensive reactions and blame' }
+                ].map((item, index) => (
+                  <div key={index}>
+                    <div className="flex items-baseline gap-3 mb-2">
+                      <span className="text-4xl font-bold text-gray-700">{item.letter}</span>
+                      <h3 className="text-2xl font-semibold text-gray-400">{item.term}</h3>
+                    </div>
+                    <p className="text-gray-500 ml-14">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CARES Column */}
+            <div>
+              <h2 className="text-5xl md:text-6xl font-bold text-blue-400 mb-12 tracking-wider">CARES</h2>
+              <div className="space-y-8">
+                {[
+                  { letter: 'C', term: 'Communicate', description: 'Clearly and consistently share context' },
+                  { letter: 'A', term: 'Adjust', description: 'Adapt when conditions change' },
+                  { letter: 'R', term: 'Relate', description: 'Build strong working relationships' },
+                  { letter: 'E', term: 'Empower', description: 'Give people ownership and trust' },
+                  { letter: 'S', term: 'Stay calm', description: 'Lead with composure under pressure' }
+                ].map((item, index) => (
+                  <div key={index}>
+                    <div className="flex items-baseline gap-3 mb-2">
+                      <span className="text-4xl font-bold text-blue-400">{item.letter}</span>
+                      <h3 className="text-2xl font-semibold text-gray-200">{item.term}</h3>
+                    </div>
+                    <p className="text-gray-400 ml-14">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Link to="/framework" className="btn-primary inline-block">
+              Explore the CARES Framework
+            </Link>
           </div>
         </div>
       </section>
