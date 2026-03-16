@@ -10,7 +10,7 @@ import Toolkit from './pages/Toolkit';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen bg-gray-950 flex flex-col">
         <Navigation />
         <main className="flex-grow">
           <Routes>

@@ -4,21 +4,21 @@
 export const authorConfig = {
   // Author Information
   author: {
-    name: 'Dr. Sarah Mitchell',
+    name: 'Saby Waraich',
     title: 'Leadership Transformation Expert',
-    company: 'Mitchell Advisory Group',
-    bio: 'Dr. Sarah Mitchell is a recognized authority on organizational transformation and executive leadership. With over 20 years of experience advising Fortune 500 CIOs and transformation leaders, she has guided hundreds of complex change initiatives across technology, healthcare, and financial services. Sarah holds a Ph.D. in Organizational Behavior and teaches executive leadership at Columbia Business School.',
+    company: '',
+    bio: 'Saby Waraich is a recognized authority on organizational transformation and executive leadership. With over 20 years of experience advising Fortune 500 CIOs and transformation leaders, he has guided hundreds of complex change initiatives across technology, healthcare, and financial services.',
     headshotUrl: '/author-headshot.jpg', // Replace with actual headshot path
-    websiteUrl: 'https://sarahmitchell.com',
-    linkedInUrl: 'https://linkedin.com/in/sarahmitchell',
+    websiteUrl: 'https://sabywaraich.com',
+    linkedInUrl: 'https://linkedin.com/in/sabywaraich',
   },
 
   // Book Information
   book: {
-    title: 'Leading Through Change',
+    title: 'CARES Leadership',
     subtitle: 'The CARES Framework for Transformation Success',
     coverUrl: '/book-cover.jpg', // Replace with actual book cover path
-    summary: 'Leading Through Change introduces the CARES framework—a proven methodology for navigating complex organizational transformations. Drawing from real-world case studies and decades of consulting experience, this book provides senior leaders with a practical roadmap for driving change that sticks.',
+    summary: 'CARES Leadership introduces a proven methodology for navigating complex organizational transformations. Drawing from real-world case studies and decades of consulting experience, this book provides senior leaders with a practical roadmap for driving change that sticks.',
     keyTakeaways: [
       'Master the five pillars of successful transformation leadership',
       'Build stakeholder alignment across competing priorities',
@@ -30,8 +30,8 @@ export const authorConfig = {
 
   // Companion Experience
   companion: {
-    tagline: 'Interactive companion for leaders applying the CARES framework in real organizations',
-    description: 'This interactive companion extends the ideas from the book with practical tools, guided reflection, and leadership resources.',
+    tagline: 'A practical digital companion to the CARES leadership book',
+    description: 'Read the Book → Explore the Companion → Apply the Framework',
     copyrightYear: '2024'
   },
 
