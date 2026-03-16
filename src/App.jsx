@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Framework from './pages/Framework';
+import Assessment from './pages/Assessment';
 import Reflection from './pages/Reflection';
 import Coach from './pages/Coach';
 import Toolkit from './pages/Toolkit';
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/framework" element={<Framework />} />
+            <Route path="/assessment" element={<Assessment />} />
             <Route path="/reflection" element={<Reflection />} />
             <Route path="/coach" element={<Coach />} />
             <Route path="/toolkit" element={<Toolkit />} />
