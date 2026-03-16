@@ -34,13 +34,13 @@ const Landing = () => {
       </section>
 
       {/* SCARE vs CARES Comparison */}
-      <section className="py-20 px-4 bg-gray-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
+      <section className="py-16 px-4 bg-gray-950">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* SCARE Column */}
-            <div>
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-700 mb-12 tracking-wider">SCARE</h2>
-              <div className="space-y-8">
+            <div className="border border-gray-800 rounded-lg p-8 bg-gray-900/30">
+              <h2 className="text-3xl font-bold text-gray-600 mb-8 tracking-wider">SCARE</h2>
+              <div className="space-y-5">
                 {[
                   { letter: 'S', term: 'Stress', description: 'Overwhelmed by constant pressure and change' },
                   { letter: 'C', term: 'Confusion', description: 'Unclear priorities and mixed messages' },
@@ -48,21 +48,21 @@ const Landing = () => {
                   { letter: 'R', term: 'Resistance', description: 'Pushback and lack of buy-in' },
                   { letter: 'E', term: 'Ego', description: 'Defensive reactions and blame' }
                 ].map((item, index) => (
-                  <div key={index}>
-                    <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-4xl font-bold text-gray-700">{item.letter}</span>
-                      <h3 className="text-2xl font-semibold text-gray-400">{item.term}</h3>
+                  <div key={index} className="flex gap-4">
+                    <span className="text-2xl font-bold text-gray-600 w-8 flex-shrink-0">{item.letter}</span>
+                    <div>
+                      <h3 className="text-base font-semibold text-gray-400 mb-1">{item.term}</h3>
+                      <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
                     </div>
-                    <p className="text-gray-500 ml-14">{item.description}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* CARES Column */}
-            <div>
-              <h2 className="text-5xl md:text-6xl font-bold text-blue-400 mb-12 tracking-wider">CARES</h2>
-              <div className="space-y-8">
+            <div className="border border-blue-900/50 rounded-lg p-8 bg-blue-950/20">
+              <h2 className="text-3xl font-bold text-blue-400 mb-8 tracking-wider">CARES</h2>
+              <div className="space-y-5">
                 {[
                   { letter: 'C', term: 'Communicate', description: 'Clearly and consistently share context' },
                   { letter: 'A', term: 'Adjust', description: 'Adapt when conditions change' },
@@ -70,19 +70,19 @@ const Landing = () => {
                   { letter: 'E', term: 'Empower', description: 'Give people ownership and trust' },
                   { letter: 'S', term: 'Stay calm', description: 'Lead with composure under pressure' }
                 ].map((item, index) => (
-                  <div key={index}>
-                    <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-4xl font-bold text-blue-400">{item.letter}</span>
-                      <h3 className="text-2xl font-semibold text-gray-200">{item.term}</h3>
+                  <div key={index} className="flex gap-4">
+                    <span className="text-2xl font-bold text-blue-400 w-8 flex-shrink-0">{item.letter}</span>
+                    <div>
+                      <h3 className="text-base font-semibold text-gray-200 mb-1">{item.term}</h3>
+                      <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                     </div>
-                    <p className="text-gray-400 ml-14">{item.description}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-16">
+          <div className="text-center mt-12">
             <Link to="/framework" className="btn-primary inline-block">
               Explore the CARES Framework
             </Link>
